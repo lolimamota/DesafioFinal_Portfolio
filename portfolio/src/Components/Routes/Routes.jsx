@@ -5,6 +5,7 @@ import Projects from '../Projects/Projects.jsx';
 import * as S from './StyleRoute.jsx';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+
 export default function Router(){
     return (
         <BrowserRouter>

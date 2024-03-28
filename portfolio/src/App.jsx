@@ -4,6 +4,7 @@ import Routes from './Components/Routes/Routes.jsx';
 
 const GlobalStyle = createGlobalStyle`
 *{
+  color: #ffeef2;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
