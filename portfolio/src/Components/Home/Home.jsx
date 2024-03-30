@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import Perfil from './img/Perfil.jpg';
+import Perfil from './img/Perfil.png';
 import * as S from  './StyleHome.jsx';
-import FotoA from './img/fotoA.jpeg';
-import FotoB from './img/fotoB.jpg';
-import FotoC from './img/fotoC.jpg';
-import FotoD from './img/fotoD.jpg';
+import FotoA from './img/fotoA.png';
+import FotoB from './img/fotoB.png';
+import FotoC from './img/fotoC.png';
+import FotoD from './img/fotoD.png';
 
 
 function Home() {
   const [image, setImage] = useState(Perfil);
-  
 
   return (
     <S.Main>
