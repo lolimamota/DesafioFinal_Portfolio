@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-color:#230903
+  background-color:#230903;
+  font-family: "Quicksand", sans-serif;
 }
 `;
 
