@@ -8,7 +8,7 @@ border-radius: 50%;
 export const Main = styled.main`
 width: 100%;
 height: calc(100vh - 10vh);
-border: solid magenta;
+padding: 10vh;
 color: white;
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -37,4 +37,8 @@ grid-template-areas:
 .btnHab2{
     grid-area: btnHab2;
 };
+`;
+
+export const H1 = styled.h1`
+text-align: center;
 `;

@@ -5,7 +5,7 @@ import * as S from  './StyleHome.jsx';
 function Home() {
   return (
     <S.Main>
-    <h1 className='h1title'>CONHEÇA A CAPITÃ DESSA AVENTURA:</h1>
+    <S.H1 className='h1title'>CONHEÇA A CAPITÃ DESSA AVENTURA:</S.H1>
     <S.Perfil className='perfilImg' src={Perfil} alt="Foto de perfil de Lorrayne" />
     <button className='btnName'>Nome</button>
     <button className='btnHab1'>Habilidades1</button>
