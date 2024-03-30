@@ -8,18 +8,17 @@ import FotoD from './img/fotoD.jpg';
 
 
 function Home() {
-  const [image, setImage] = useState(Perfil)
-
+  const [image, setImage] = useState(Perfil);
   
 
   return (
     <S.Main>
     <S.H1 className='h1title'>CONHEÇA A CAPITÃ DESSA AVENTURA:</S.H1>
     <S.Perfil className='perfilImg' src={image} alt="Foto de perfil de Lorrayne" />
-    <button className='btnName'>Nome</button>
-    <button className='btnHab1'>Habilidades1</button>
-    <button className='btnHab2'>Habilidades2</button>
-    <button className='btnFav'>FavThings</button>
+    <button onClick={()=>{setImage(FotoA)}} className='btnName'>Nome</button>
+    <button onClick={()=>{setImage(FotoB)}} className='btnHab1'>Habilidades1</button>
+    <button onClick={()=>{setImage(FotoC)}} className='btnHab2'>Habilidades2</button>
+    <button onClick={()=>{setImage(FotoD)}} className='btnFav'>FavThings</button>
     </S.Main>
   )
 }
