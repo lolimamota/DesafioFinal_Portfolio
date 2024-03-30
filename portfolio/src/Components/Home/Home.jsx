@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Perfil from './img/Perfil.png';
 import * as S from  './StyleHome.jsx';
 import FotoA from './img/fotoA.png';
