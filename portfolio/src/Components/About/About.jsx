@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import * as S from './StyleAbout.jsx';
 
 function About() {
   return (
-    <main></main>
+    <S.Main></S.Main>
   )
 }
 
