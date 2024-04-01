@@ -1,16 +1,17 @@
 import React from 'react';
 import * as S from './StyleAbout.jsx';
+import CardHover from './CardHover.jsx'
 
 function About() {
   return (
       <S.Main>
-      <S.Section>
-        <S.Div className='html'>HTML</S.Div>
-        <S.Div className='css'>CSS</S.Div>
-        <S.Div className='js'>JS</S.Div>
-        <S.Div className='react'>REACT</S.Div>
-        <S.Div className='dev'>DEV</S.Div>
-      </S.Section>
+        <S.GridSec>
+        <CardHover className="html" name="HTML"/>
+        <CardHover className="css" name="CSS"/>
+        <CardHover className="js" name="JS"/>
+        <CardHover className="react" name="REACT"/>
+        <CardHover className="dev" name="DEV"/>
+        </S.GridSec>
       </S.Main>
   )
 }
