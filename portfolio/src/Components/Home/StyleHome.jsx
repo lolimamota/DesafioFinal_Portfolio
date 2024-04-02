@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Perfil = styled.img`
 width: 250px;
 border-radius: 50%;
-box-shadow: -15px 3px 20px 7px #ffe4f3;
+box-shadow: -15px 3px 90px 7px #ffe4f3;
 `;
 
 export const Main = styled.main`
@@ -47,6 +47,7 @@ grid-template-areas:
 
 export const H1 = styled.h1`
 text-align: center;
+background-color: transparent;
 transform: translateY(0px);
 animation: float 5s ease-in-out infinite;
 @keyframes float {
@@ -66,6 +67,7 @@ export const H2 = styled.h2`
 text-align: center;
 font-weight: 100;
 height: 10vh;
+background-color: transparent;
 `;
 
 export const Button = styled.button`

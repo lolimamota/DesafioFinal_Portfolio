@@ -1,21 +1,27 @@
 import React from 'react';
 import * as S from './StyleAbout.jsx';
-import CardHover from './CardHover.jsx'
+import styled from 'styled-components';
+import Mapa from './img/mapa.png';
 
-function About() {
+
+const Main = styled.main`
+background-image: url(${Mapa});
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+width: 100%;
+height: 90vh;
+`;
+
+
+export default function About() {
   return (
-      <>
-      <S.Main>
-      </S.Main>
-      <S.GridSec>
-        <CardHover className="html" name="HTML"/>
-        <CardHover className="css" name="CSS"/>
-        <CardHover className="js" name="JS"/>
-        <CardHover className="react" name="REACT"/>
-        <CardHover className="dev" name="DEV"/>
-        </S.GridSec>
-      </>
+    <Main>
+      <S.Div className='html'>html</S.Div>
+      <S.Div className='css'>css</S.Div>
+      <S.Div className='js'>js</S.Div>
+      <S.Div className='react'>react</S.Div>
+      <S.Div className='dev'>dev</S.Div>
+    </Main>
   )
-}
-
-export default About
+};
