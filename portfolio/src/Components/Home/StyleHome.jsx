@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Perfil = styled.img`
 width: 250px;
 border-radius: 50%;
+box-shadow: -15px 3px 20px 7px #ffe4f3;
 `;
 
 export const Main = styled.main`
@@ -46,6 +47,19 @@ grid-template-areas:
 
 export const H1 = styled.h1`
 text-align: center;
+transform: translateY(0px);
+animation: float 5s ease-in-out infinite;
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
 `;
 
 export const H2 = styled.h2`
@@ -56,4 +70,9 @@ height: 10vh;
 
 export const Button = styled.button`
 border-radius: 50px;
+border: none;
+&:hover{
+    background-image: linear-gradient(to left, #4b244a , #6d72c3);
+    transition-delay: transparent ease-in 0.2s;
+}
 `;
