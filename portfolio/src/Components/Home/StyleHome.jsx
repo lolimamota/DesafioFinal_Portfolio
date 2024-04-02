@@ -51,4 +51,9 @@ text-align: center;
 export const H2 = styled.h2`
 text-align: center;
 font-weight: 100;
+height: 10vh;
+`;
+
+export const Button = styled.button`
+border-radius: 50px;
 `;
