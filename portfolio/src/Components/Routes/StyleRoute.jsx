@@ -14,6 +14,12 @@ height: 10vh;
 display: flex;
 justify-content: space-around;
 align-items: center;
-font-size: 1.2rem;
+font-size: 1.5rem;
 text-transform: uppercase;
+font-weight: 100;
+:hover{
+    color: #6d72c3;
+    transition: transform 0.2s ease-in;
+    transform: scale(1.1);
+}
 `;
