@@ -17,7 +17,9 @@ grid-template-areas:
 ". h1title h1title h1title ."
 "btnName . . . btnHab1"
 ". . perfilImg . ."
-"btnHab2 . . . btnFav";
+"btnHab2 . . . btnFav"
+". . text . ."
+;
 
 .h1title{
     grid-area:h1title;
@@ -37,8 +39,16 @@ grid-template-areas:
 .btnHab2{
     grid-area: btnHab2;
 };
+.text{
+    grid-area: text;
+};
 `;
 
 export const H1 = styled.h1`
 text-align: center;
+`;
+
+export const H2 = styled.h2`
+text-align: center;
+font-weight: 100;
 `;
