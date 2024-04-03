@@ -1,27 +1,34 @@
-import React from 'react';
-import * as S from './StyleAbout.jsx';
-import styled from 'styled-components';
-import Mapa from './img/mapa.png';
+import React from "react";
+import * as S from './StyleAbout'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import MapPage from './AboutRoute/MapPage.jsx'
+import HTML from './AboutRoute/HtmlPage.jsx';
+import CSS from './AboutRoute/CssPage.jsx';
+import JS from './AboutRoute/JavaScriptPage.jsx';
+import ReactPage from './AboutRoute/ReactPage.jsx';
+import DEV from './AboutRoute/Developer.jsx';
 
-
-const Main = styled.main`
-background-image: url(${Mapa});
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-width: 100%;
-height: 90vh;
-`;
-
-
-export default function About() {
-  return (
-    <Main>
-      <S.Div className='html'>html</S.Div>
-      <S.Div className='css'>css</S.Div>
-      <S.Div className='js'>js</S.Div>
-      <S.Div className='react'>react</S.Div>
-      <S.Div className='dev'>dev</S.Div>
-    </Main>
+export default function SubRouter(){
+  return(
+    <BrowserRouter>
+    <nav>
+      <ul>
+        <li><Link to="/MapPage">Você está aqui!</Link></li>
+        <li><Link to="/HTML">HTML</Link></li>
+        <li><Link to="/CSS">CSS</Link></li>
+        <li><Link to="/JS">JS</Link></li>
+        <li><Link to="/ReactPage">REACT</Link></li>
+        <li><Link to="/DEV">DEV</Link></li>
+      </ul>
+    </nav>
+    <Routes>
+      <Route path="/MapPage" element={<MapPage/>}/>
+      <Route path="/HTML" element={<HTML/>}/>
+      <Route path="/CSS" element={<CSS/>}/>
+      <Route path="/JS" element={<JS/>}/>
+      <Route path="/ReactPage" element={<ReactPage/>}/>
+      <Route path="/DEV" element={<DEV/>}/>
+    </Routes>
+    </BrowserRouter>
   )
-};
+}
