@@ -56,4 +56,7 @@ export const PegadasAnimadas = styled.section`
 width: 100%;
 height: 15vh;
 border: solid red;
+&:hover{
+    animation: to left 0.5s ease-out;
+}
 `;
