@@ -1,8 +1,14 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom';
 
 function MapPage() {
+  let navigate = useNavigate();
+
+  const handleClickMBACK = ()=>navigate(-1);
   return (
-    <div>MapPage</div>
+    <>
+    <button onClick={()=>handleClickMBACK()}>VOLTAR</button>
+    </>
   )
 }
 

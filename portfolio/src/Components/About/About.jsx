@@ -1,34 +1,31 @@
 import React from "react";
-import * as S from './StyleAbout'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import MapPage from './AboutRoute/MapPage.jsx'
-import HTML from './AboutRoute/HtmlPage.jsx';
-import CSS from './AboutRoute/CssPage.jsx';
-import JS from './AboutRoute/JavaScriptPage.jsx';
-import ReactPage from './AboutRoute/ReactPage.jsx';
-import DEV from './AboutRoute/Developer.jsx';
+import * as S from './StyleAbout.jsx';
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function SubRouter(){
+  let navigate = useNavigate();
+
+  const handleClickMAP = ()=>navigate("/MapPage");
+  const handleClickHTML = ()=>navigate("/HTML");
+  const handleClickCSS = ()=>navigate("/CSS");
+  const handleClickJS = ()=>navigate("/JS");
+  const handleClickREACT = ()=>navigate("/ReactPage");
+  const handleClickDEV = ()=>navigate("/DEV");
+
   return(
-    <BrowserRouter>
+    <>
     <nav>
-      <ul>
-        <li><Link to="/MapPage">Você está aqui!</Link></li>
-        <li><Link to="/HTML">HTML</Link></li>
-        <li><Link to="/CSS">CSS</Link></li>
-        <li><Link to="/JS">JS</Link></li>
-        <li><Link to="/ReactPage">REACT</Link></li>
-        <li><Link to="/DEV">DEV</Link></li>
-      </ul>
+      <S.Ul>
+        <S.Li onClick={()=>handleClickMAP()}>MAPA</S.Li>
+        <S.Li onClick={()=>handleClickHTML()}>HTML</S.Li>
+        <S.Li onClick={()=>handleClickCSS()}>CSS</S.Li>
+        <S.Li onClick={()=>handleClickJS()}>JS</S.Li>
+        <S.Li onClick={()=>handleClickREACT()}>REACT</S.Li>
+        <S.Li onClick={()=>handleClickDEV()}>DEV</S.Li>
+      </S.Ul>
     </nav>
-    <Routes>
-      <Route path="/MapPage" element={<MapPage/>}/>
-      <Route path="/HTML" element={<HTML/>}/>
-      <Route path="/CSS" element={<CSS/>}/>
-      <Route path="/JS" element={<JS/>}/>
-      <Route path="/ReactPage" element={<ReactPage/>}/>
-      <Route path="/DEV" element={<DEV/>}/>
-    </Routes>
-    </BrowserRouter>
-  )
+    </>
+  );
 }

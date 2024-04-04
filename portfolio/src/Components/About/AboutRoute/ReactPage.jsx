@@ -1,8 +1,15 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom';
 
 function ReactPage() {
+  let navigate = useNavigate();
+
+  const handleClickMBACK = ()=>navigate(-1);
   return (
-    <div>ReactPage</div>
+    <>
+    <button onClick={()=>handleClickMBACK()}>VOLTAR</button>
+    
+    </>
   )
 }
 
