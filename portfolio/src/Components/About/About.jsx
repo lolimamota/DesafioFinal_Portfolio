@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from './StyleAbout.jsx';
 import { useNavigate } from "react-router-dom";
+import Mapa from './img/mapa.png';
 
 
 
@@ -26,6 +27,9 @@ export default function SubRouter(){
         <S.Li onClick={()=>handleClickDEV()}>DEV</S.Li>
       </S.Ul>
     </nav>
+    <div>
+      <S.Mapa src={Mapa} alt="Imagem de uma mapa do tesouro com os caminhos que percorri ate chegar aqui." />
+    </div>
     </>
   );
 }

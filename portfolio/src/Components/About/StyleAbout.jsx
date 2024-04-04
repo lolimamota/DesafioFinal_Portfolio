@@ -30,7 +30,6 @@ font-weight: 100;
 `;
 
 export const Text = styled.div`
-border: solid pink;
 height: 40vh;
 display:flex;
 justify-content: space-around;
@@ -39,6 +38,22 @@ align-items: center;
 
 export const Paragraph = styled.p`
 width: 20%;
+height: 25vh;
 text-align: justify;
-text-shadow:5px 1px 1px #4b244a;
+border: solid 0.5px #6d72c3;
+border-radius: 5px;
+&:hover{
+    transform: scale(1.2);
+}
+`;
+
+export const Mapa = styled.img`
+width: 100%;
+padding: 10vh;
+`;
+
+export const PegadasAnimadas = styled.section`
+width: 100%;
+height: 15vh;
+border: solid red;
 `;
