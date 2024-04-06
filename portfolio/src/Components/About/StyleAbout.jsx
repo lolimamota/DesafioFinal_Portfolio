@@ -53,10 +53,17 @@ padding: 10vh;
 `;
 
 export const PegadasAnimadas = styled.section`
-width: 100%;
 height: 15vh;
 border: solid red;
+display: flex;
+justify-content: space-around;
+align-items: center;
 &:hover{
     animation: to left 0.5s ease-out;
+}
+img{
+    border: solid white;
+    width: 80px;
+    display: flex;
 }
 `;
