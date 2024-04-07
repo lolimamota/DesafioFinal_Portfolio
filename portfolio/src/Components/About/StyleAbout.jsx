@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+//------------ESTILIZAÇÃO DA MAP PAGE------------
 export const Ul = styled.ul`
 display: flex;
 justify-content: space-around;
@@ -15,7 +16,7 @@ text-align: center;
 `;
 
 export const BtnBack = styled.button`
-margin-top: 5vh;
+margin: 5rem 0 2rem 2rem ;
 background-image: linear-gradient(to left, #4b244a , #6d72c3);
 transition-delay: transparent ease-in 0.2s;
 border-radius: 50px 50px 50px 50px;
@@ -120,3 +121,59 @@ background-image: linear-gradient(to left ,  transparent , #230903);
 }
 `;
 
+//------------------ESTILIZAÇÃO DA HTMLPAGE------------------------
+
+export const TextTech = styled.p`
+width: 55%;
+height: 40vh;
+padding: 1rem;
+text-align: center;
+border: solid 0.5px #6d72c3;
+border-radius: 5px;
+margin-left: 10rem;
+`;
+
+export const SectionHTML = styled.section`
+width: 100%;
+height: 80vh;
+display: grid;
+grid-template-areas: 
+". . . . ."
+ ". btnHtml . . ."
+ ". . . . ."
+ ". textHtml . imgHtml ."
+ ". . . . ."
+ ;
+
+.btnHtml{
+grid-area: btnHtml;
+};
+.textHtml{
+grid-area: textHtml;
+};
+.imgHtml{
+grid-area: imgHtml;
+};
+`;
+
+export const ImgHTML = styled.img`
+width: 350px;
+transform: translateY(0px);
+animation: float 5s ease-in-out infinite;
+box-shadow: 0 0 20px 2px #ffe4f3;
+margin-right: 10rem;
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+`;
+
+//------------------ESTLIZAÇÃO DA CSS PAGE -----------------------------
