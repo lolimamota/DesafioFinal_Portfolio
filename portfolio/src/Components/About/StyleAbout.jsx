@@ -125,7 +125,6 @@ background-image: linear-gradient(to left ,  transparent , #230903);
 
 export const TextTech = styled.p`
 width: 55%;
-height: 40vh;
 padding: 1rem;
 text-align: center;
 border: solid 0.5px #6d72c3;
@@ -197,6 +196,56 @@ grid-area: btn;
 grid-area: texto;
 };
 .imgCss{
+grid-area: img;
+};
+`;
+
+//------------------ ESTILIZAÇÃO DA JS PAGE-----------------------------
+
+export const SectionJS = styled.section`
+width: 100%;
+height: 80vh;
+display: grid;
+grid-template-areas: 
+". . . . ."
+ ". btn . . ."
+ ". . . . ."
+ ". texto . img ."
+ ". . . . ."
+ ;
+
+.btnJS{
+grid-area: btn;
+};
+.textJS{
+grid-area: texto;
+};
+.imgJS{
+grid-area: img;
+};
+`;
+
+//------------------ ESTILIZAÇÃO DA REACT PAGE-----------------------------
+
+export const SectionReact = styled.section`
+width: 100%;
+height: 80vh;
+display: grid;
+grid-template-areas: 
+". . . . ."
+ ". btn . . ."
+ ". . . . ."
+ ". texto . img ."
+ ". . . . ."
+ ;
+
+.btnReact{
+grid-area: btn;
+};
+.textReact{
+grid-area: texto;
+};
+.imgReact{
 grid-area: img;
 };
 `;
