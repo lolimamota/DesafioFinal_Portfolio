@@ -1,20 +1,20 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom';
-import * as S from '../StyleAbout.jsx'
+import * as S from '../StyleAbout.jsx';
 
-import CSS from '../img/CSS.png'
+import LogoCSS from '../img/CSS.png'
 
-function HtmlPage() {
+function CssPage() {
   let navigate = useNavigate();
 
   const handleClickMBACK = ()=>navigate(-1);
   return (
-    <S.SectionHTML>
-    <S.BtnBack className='btnHtml' onClick={()=>handleClickMBACK()}>VOLTAR</S.BtnBack>
-    <S.ImgHTML className='imgHtml' src={CSS} alt="Logo do Html" />
-    <S.TextTech className='textHtml'>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web. O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um navegador da Web. A marcação HTML inclui "elementos" especiais, como head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, details, embed, nav, output, progress, video, ul, ol, li e muitos outros. Fonte: MDN Web Docs</S.TextTech>
-    </S.SectionHTML>
+    <S.SectionCss>
+    <S.BtnBack className="btnCss " onClick={()=>handleClickMBACK()}>VOLTAR</S.BtnBack>
+    <S.ImgHTML className='imgCss' src={LogoCSS} alt="Logo do CSS" />
+    <S.TextTech className='textCss'>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias. CSS é uma das principais linguagens da open web e é padronizada em navegadores web de acordo com as especificação da W3C. Desenvolvido em níveis, o CSS1 está atualmente obsoleto, o CSS2.1 é uma recomendação e o CSS3, agora dividido em pequenos módulos, está progredindo para a sua padronização. Fonte: MDN Web Docs</S.TextTech>
+    </S.SectionCss>
   )
 }
 
-export default HtmlPage
+export default CssPage

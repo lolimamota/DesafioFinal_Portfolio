@@ -177,3 +177,26 @@ margin-right: 10rem;
 `;
 
 //------------------ESTLIZAÇÃO DA CSS PAGE -----------------------------
+
+export const SectionCss = styled.section`
+width: 100%;
+height: 80vh;
+display: grid;
+grid-template-areas: 
+". . . . ."
+ ". btn . . ."
+ ". . . . ."
+ ". texto . img ."
+ ". . . . ."
+ ;
+
+.btnCss{
+grid-area: btn;
+};
+.textCss{
+grid-area: texto;
+};
+.imgCss{
+grid-area: img;
+};
+`;
