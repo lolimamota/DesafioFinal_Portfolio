@@ -249,3 +249,30 @@ grid-area: texto;
 grid-area: img;
 };
 `;
+
+//-----------------------------ESTILIZAÇÃO DA DEV PAGE -----------------------
+export const TextTech2 = styled.p`
+width: 55%;
+padding: 1rem;
+text-align: center;
+border: solid 0.5px #6d72c3;
+border-radius: 5px;
+margin-left: 20rem;
+`;
+
+export const DivDev =styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5rem;
+`;
+
+export const AnchorTag = styled.a`
+img{
+    width: 200px;
+};
+
+:hover{
+    transform: scale(1.2);
+    }
+`;
