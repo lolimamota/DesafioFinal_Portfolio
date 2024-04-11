@@ -43,6 +43,7 @@ height: 25vh;
 text-align: center;
 border: solid 0.5px #6d72c3;
 border-radius: 5px;
+padding: 2rem;
 &:hover{
     transform: scale(1.2);
 }
