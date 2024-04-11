@@ -1,11 +1,13 @@
 import React from 'react';
+import { Carousel } from 'nuka-carousel';
+import * as S from '../Projects/StyleProjects.jsx';
+
 import Fantastika from './img/cao.png';
 import Cartoon from './img/cartoon.png';
 import Cruzeiro from './img/cruzeiro.png';
 import TheWitcher from './img/fogo.png';
 import Parceiros from './img/patrocinadores.png';
 import TDCacho from './img/tdc.png';
-import { Carousel } from 'nuka-carousel';
 
 function Projects() {
   const Challenges = [
@@ -62,7 +64,6 @@ function Projects() {
         // height: '8vh', 
         fontFamily: "Inconsolata",
         Dots: "red",
-
       },
     }
 
@@ -71,14 +72,14 @@ function Projects() {
 
   return (
     <>
-      <Carousel {...params}>
+      <Carousel {...params} autoplay showDots>
 
         {Challenges.map((item) => (
-          <div>
-            <a href={item.link} target="_blank">  <img src={item.image} alt={item.title} />   </a>
+          <S.Div>
+            <a href={item.link} target="_blank"><img src={item.image} alt={item.title} />   </a>
             <h2>{item.title}</h2>
             <h3>{item.description}</h3>
-          </div>
+          </S.Div>
         ))}
       </Carousel>
 
