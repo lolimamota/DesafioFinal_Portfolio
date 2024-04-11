@@ -125,7 +125,7 @@ background-image: linear-gradient(to left ,  transparent , #230903);
 
 export const TextTech = styled.p`
 width: 55%;
-padding: 1rem;
+padding: 5rem;
 text-align: center;
 border: solid 0.5px #6d72c3;
 border-radius: 5px;
@@ -201,6 +201,14 @@ grid-area: img;
 `;
 
 //------------------ ESTILIZAÇÃO DA JS PAGE-----------------------------
+export const TextTech3 = styled.p`
+width: 55%;
+padding: 1.5rem;
+text-align: center;
+border: solid 0.5px #6d72c3;
+border-radius: 5px;
+margin-left: 10rem;
+`;
 
 export const SectionJS = styled.section`
 width: 100%;
@@ -253,7 +261,7 @@ grid-area: img;
 //-----------------------------ESTILIZAÇÃO DA DEV PAGE -----------------------
 export const TextTech2 = styled.p`
 width: 55%;
-padding: 1rem;
+padding: 5rem;
 text-align: center;
 border: solid 0.5px #6d72c3;
 border-radius: 5px;
