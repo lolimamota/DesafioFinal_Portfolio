@@ -10,6 +10,7 @@ justify-content: space-around;
 flex-direction: column;
 overflow: hidden;
 border: solid #6d72c3;
+margin: 15px;
 padding: 1rem;
 
 img{
