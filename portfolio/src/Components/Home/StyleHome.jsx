@@ -4,6 +4,9 @@ export const Perfil = styled.img`
 width: 250px;
 border-radius: 50%;
 box-shadow: -15px 3px 90px 7px #ffe4f3;
+@media (min-width: 320px) and (max-width: 768px) {
+    width: 150px;        
+}
 `;
 
 export const Main = styled.main`
@@ -43,6 +46,18 @@ grid-template-areas:
 .text{
     grid-area: text;
 };
+@media (min-width: 320px) and (max-width: 768px) {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-template-areas:
+". h1title h1title h1title ."
+". perfilImg perfilImg perfilImg ."
+"btnName btnName . btnHab1 btnHab1"
+"btnHab2 btnHab2 . btnFav btnFav"
+". . text . ."
+;
+}
 `;
 
 export const H1 = styled.h1`
@@ -60,7 +75,10 @@ animation: float 5s ease-in-out infinite;
     100%{
         transform: translateY(0px)
     }
-}
+};
+@media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.5rem;
+};
 `;
 
 export const H2 = styled.h2`
@@ -68,6 +86,12 @@ text-align: center;
 font-weight: 100;
 height: 10vh;
 background-color: transparent;
+@media (min-width: 320px) and (max-width: 768px) {
+    height: 20vh;
+    width: 50vw;
+    border: solid red;
+    font-size: 1rem;
+};
 `;
 
 export const Button = styled.button`
@@ -76,5 +100,11 @@ border: none;
 &:hover{
     background-image: linear-gradient(to left, #4b244a , #6d72c3);
     transition-delay: transparent ease-in 0.2s;
+};
+@media (min-width: 320px) and (max-width: 768px) {
+    &:hover{
+    background-image: linear-gradient(to left, #4b244a , #6d72c3);
+    transition-delay: transparent ease-in 0.2s;
+};
 }
 `;

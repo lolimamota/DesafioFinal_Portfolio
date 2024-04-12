@@ -22,4 +22,8 @@ font-weight: 100;
     transition: transform 0.2s ease-in;
     transform: scale(1.1);
 }
+@media (min-width: 320px) and (max-width: 768px) {
+    border: solid red;
+    font-size: 0.8rem;
+}
 `;
