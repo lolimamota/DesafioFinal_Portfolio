@@ -48,15 +48,15 @@ grid-template-areas:
 };
 @media (min-width: 320px) and (max-width: 768px) {
 display: grid;
-grid-template-columns: repeat(5, 1fr);
+/* grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(6, 1fr);
 grid-template-areas:
-". h1title h1title h1title ."
-". perfilImg perfilImg perfilImg ."
-"btnName btnName . btnHab1 btnHab1"
-"btnHab2 btnHab2 . btnFav btnFav"
-". . text . ."
-;
+".  h1title  ."
+". perfilImg ."
+"btnName . btnHab1"
+". text ."
+"btnHab2 . btnFav"
+; */
 }
 `;
 
@@ -77,7 +77,7 @@ animation: float 5s ease-in-out infinite;
     }
 };
 @media (min-width: 320px) and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size:.8rem;
 };
 `;
 
@@ -88,8 +88,7 @@ height: 10vh;
 background-color: transparent;
 @media (min-width: 320px) and (max-width: 768px) {
     height: 20vh;
-    width: 50vw;
-    border: solid red;
+    width: 100%;
     font-size: 1rem;
 };
 `;

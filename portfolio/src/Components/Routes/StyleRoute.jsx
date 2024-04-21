@@ -23,7 +23,6 @@ font-weight: 100;
     transform: scale(1.1);
 }
 @media (min-width: 320px) and (max-width: 768px) {
-    border: solid red;
     font-size: 0.8rem;
 }
 `;
