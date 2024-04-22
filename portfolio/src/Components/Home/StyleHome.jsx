@@ -47,16 +47,11 @@ grid-template-areas:
     grid-area: text;
 };
 @media (min-width: 320px) and (max-width: 768px) {
-display: grid;
-/* grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(6, 1fr);
-grid-template-areas:
-".  h1title  ."
-". perfilImg ."
-"btnName . btnHab1"
-". text ."
-"btnHab2 . btnFav"
-; */
+    padding: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 `;
 
@@ -90,6 +85,10 @@ background-color: transparent;
     height: 20vh;
     width: 100%;
     font-size: 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #4b244a , #6d72c3);
+    padding-top: 1rem;
+    color: white;
 };
 `;
 

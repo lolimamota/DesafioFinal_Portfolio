@@ -16,7 +16,7 @@ export default function SubRouter(){
   const handleClickDEV = ()=>navigate("/DEV");
 
   return(
-    <>
+    <S.ContainerAbout>
     <nav>
       <S.Ul>
         <S.Li onClick={()=>handleClickMAP()}>DESCOBERTA</S.Li>
@@ -30,6 +30,6 @@ export default function SubRouter(){
     <div>
       <S.Mapa src={Mapa} alt="Imagem de uma mapa do tesouro com os caminhos que percorri ate chegar aqui." />
     </div>
-    </>
+    </S.ContainerAbout>
   );
 }
