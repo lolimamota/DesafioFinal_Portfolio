@@ -45,6 +45,11 @@ grid-template-areas:
 };
 .text{
     grid-area: text;
+    @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #4b244a , #6d72c3);
+    }
 };
 @media (min-width: 320px) and (max-width: 768px) {
     padding: 5vh;
@@ -82,12 +87,7 @@ font-weight: 100;
 height: 10vh;
 background-color: transparent;
 @media (min-width: 320px) and (max-width: 768px) {
-    height: 20vh;
-    width: 100%;
     font-size: 1rem;
-    border-radius: 10px;
-    background-image: linear-gradient(to left, #4b244a , #6d72c3);
-    padding-top: 1rem;
     color: white;
 };
 `;
