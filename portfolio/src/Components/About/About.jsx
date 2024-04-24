@@ -5,31 +5,31 @@ import Mapa from './img/mapa.png';
 
 
 
-export default function SubRouter(){
+export default function SubRouter() {
   let navigate = useNavigate();
 
-  const handleClickMAP = ()=>navigate("/MapPage");
-  const handleClickHTML = ()=>navigate("/HTML");
-  const handleClickCSS = ()=>navigate("/CSS");
-  const handleClickJS = ()=>navigate("/JS");
-  const handleClickREACT = ()=>navigate("/ReactPage");
-  const handleClickDEV = ()=>navigate("/DEV");
+  const handleClickMAP = () => navigate("/MapPage");
+  const handleClickHTML = () => navigate("/HTML");
+  const handleClickCSS = () => navigate("/CSS");
+  const handleClickJS = () => navigate("/JS");
+  const handleClickREACT = () => navigate("/ReactPage");
+  const handleClickDEV = () => navigate("/DEV");
 
-  return(
+  return (
     <S.ContainerAbout>
-    <nav>
-      <S.Ul>
-        <S.Li onClick={()=>handleClickMAP()}>DESCOBERTA</S.Li>
-        <S.Li onClick={()=>handleClickHTML()}>HTML</S.Li>
-        <S.Li onClick={()=>handleClickCSS()}>CSS</S.Li>
-        <S.Li onClick={()=>handleClickJS()}>JS</S.Li>
-        <S.Li onClick={()=>handleClickREACT()}>REACT</S.Li>
-        <S.Li onClick={()=>handleClickDEV()}>DEV</S.Li>
-      </S.Ul>
-    </nav>
-    <div>
-      <S.Mapa src={Mapa} alt="Imagem de uma mapa do tesouro com os caminhos que percorri ate chegar aqui." />
-    </div>
+      <nav>
+        <S.Ul>
+          <S.Li onClick={() => handleClickMAP()}>DESCOBERTA</S.Li>
+          <S.Li onClick={() => handleClickHTML()}>HTML</S.Li>
+          <S.Li onClick={() => handleClickCSS()}>CSS</S.Li>
+          <S.Li onClick={() => handleClickJS()}>JS</S.Li>
+          <S.Li onClick={() => handleClickREACT()}>REACT</S.Li>
+          <S.Li onClick={() => handleClickDEV()}>DEV</S.Li>
+        </S.Ul>
+      </nav>
+      <div>
+        <S.Mapa src={Mapa} alt="Imagem de uma mapa do tesouro com os caminhos que percorri ate chegar aqui." />
+      </div>
     </S.ContainerAbout>
   );
 }

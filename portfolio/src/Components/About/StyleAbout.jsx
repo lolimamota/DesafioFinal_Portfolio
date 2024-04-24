@@ -26,11 +26,6 @@ text-align: center;
     text-align: left;
     padding-left: 0.5rem;
     font-size: 0.8rem;
-    :hover{
-    color: #6d72c3;
-    transition: transform 0.2s ease-in;
-    transform: scale(1.1);
-}
 }`;
 
 export const BtnBack = styled.button`
@@ -299,7 +294,7 @@ border-radius: 5px;
 margin-left: 20rem;
 `;
 
-export const DivDev =styled.div`
+export const DivDev = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
