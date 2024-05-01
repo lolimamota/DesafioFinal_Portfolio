@@ -69,6 +69,9 @@ grid-template-areas:
 "btnHab2 btnHab2 . btnFav btnFav"
 ". . text . ."
 ;
+<<<<<<< HEAD
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
 >>>>>>> parent of 650ee57 (commit sem margens)
 }
 `;
@@ -105,6 +108,9 @@ background-color: transparent;
     height: 20vh;
     width: 50vw;
     border: solid red;
+<<<<<<< HEAD
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
 >>>>>>> parent of 650ee57 (commit sem margens)
     font-size: 1rem;
     color: white;
