@@ -15,21 +15,21 @@ export default function SubRouter() {
   const handleClickREACT = () => navigate("/ReactPage");
   const handleClickDEV = () => navigate("/DEV");
 
-  return (
-    <S.ContainerAbout>
-      <nav>
-        <S.Ul>
-          <S.Li onClick={() => handleClickMAP()}>DESCOBERTA</S.Li>
-          <S.Li onClick={() => handleClickHTML()}>HTML</S.Li>
-          <S.Li onClick={() => handleClickCSS()}>CSS</S.Li>
-          <S.Li onClick={() => handleClickJS()}>JS</S.Li>
-          <S.Li onClick={() => handleClickREACT()}>REACT</S.Li>
-          <S.Li onClick={() => handleClickDEV()}>DEV</S.Li>
-        </S.Ul>
-      </nav>
-      <div>
-        <S.Mapa src={Mapa} alt="Imagem de uma mapa do tesouro com os caminhos que percorri ate chegar aqui." />
-      </div>
-    </S.ContainerAbout>
+  return(
+    <>
+    <nav>
+      <S.Ul>
+        <S.Li onClick={()=>handleClickMAP()}>DESCOBERTA</S.Li>
+        <S.Li onClick={()=>handleClickHTML()}>HTML</S.Li>
+        <S.Li onClick={()=>handleClickCSS()}>CSS</S.Li>
+        <S.Li onClick={()=>handleClickJS()}>JS</S.Li>
+        <S.Li onClick={()=>handleClickREACT()}>REACT</S.Li>
+        <S.Li onClick={()=>handleClickDEV()}>DEV</S.Li>
+      </S.Ul>
+    </nav>
+    <div>
+      <S.Mapa src={Mapa} alt="Imagem de uma mapa do tesouro com os caminhos que percorri ate chegar aqui." />
+    </div>
+    </>
   );
 }
