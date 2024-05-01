@@ -70,6 +70,9 @@ grid-template-areas:
 ". . text . ."
 ;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
 >>>>>>> parent of 650ee57 (commit sem margens)
 =======
 >>>>>>> parent of 650ee57 (commit sem margens)
@@ -109,6 +112,9 @@ background-color: transparent;
     width: 50vw;
     border: solid red;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
 >>>>>>> parent of 650ee57 (commit sem margens)
 =======
 >>>>>>> parent of 650ee57 (commit sem margens)
