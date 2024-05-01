@@ -19,7 +19,7 @@ export default function SubRouter() {
     <>
     <nav>
       <S.Ul>
-        <S.Li onClick={()=>handleClickMAP()}>DESCOBERTA</S.Li>
+        <S.Li onClick={()=>handleClickMAP()}>Pra ver se funcionou</S.Li>
         <S.Li onClick={()=>handleClickHTML()}>HTML</S.Li>
         <S.Li onClick={()=>handleClickCSS()}>CSS</S.Li>
         <S.Li onClick={()=>handleClickJS()}>JS</S.Li>
