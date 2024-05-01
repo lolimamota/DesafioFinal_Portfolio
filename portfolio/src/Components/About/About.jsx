@@ -5,21 +5,21 @@ import Mapa from './img/mapa.png';
 
 
 
-export default function SubRouter(){
+export default function SubRouter() {
   let navigate = useNavigate();
 
-  const handleClickMAP = ()=>navigate("/MapPage");
-  const handleClickHTML = ()=>navigate("/HTML");
-  const handleClickCSS = ()=>navigate("/CSS");
-  const handleClickJS = ()=>navigate("/JS");
-  const handleClickREACT = ()=>navigate("/ReactPage");
-  const handleClickDEV = ()=>navigate("/DEV");
+  const handleClickMAP = () => navigate("/MapPage");
+  const handleClickHTML = () => navigate("/HTML");
+  const handleClickCSS = () => navigate("/CSS");
+  const handleClickJS = () => navigate("/JS");
+  const handleClickREACT = () => navigate("/ReactPage");
+  const handleClickDEV = () => navigate("/DEV");
 
   return(
     <>
     <nav>
       <S.Ul>
-        <S.Li onClick={()=>handleClickMAP()}>trocando esse titulo</S.Li>
+        <S.Li onClick={()=>handleClickMAP()}>DESCOBERTA</S.Li>
         <S.Li onClick={()=>handleClickHTML()}>HTML</S.Li>
         <S.Li onClick={()=>handleClickCSS()}>CSS</S.Li>
         <S.Li onClick={()=>handleClickJS()}>JS</S.Li>
