@@ -22,7 +22,22 @@ font-weight: 100;
     transition: transform 0.2s ease-in;
     transform: scale(1.1);
 }
+.ImgMenu{
+    display: none;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     font-size: 0.8rem;
-}
+    margin-left: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    
+    .ImgMenu{
+        display: flex;
+        width: 1.5rem;
+    }
+    .responsiveMenu{
+        display: none;
+    }
+    }
 `;

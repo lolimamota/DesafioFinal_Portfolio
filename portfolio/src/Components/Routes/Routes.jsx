@@ -12,6 +12,7 @@ import CSS from '../About/AboutRoute/CssPage.jsx';
 import JS from '../About/AboutRoute/JavaScriptPage.jsx';
 import ReactPage from '../About/AboutRoute/ReactPage.jsx';
 import DEV from '../About/AboutRoute/Developer.jsx';
+import ImgMenu from '../../assets/img responsive/iconcolored.png';
 
 
 export default function Router() {
@@ -19,9 +20,10 @@ export default function Router() {
         <BrowserRouter>
             <S.Nav>
                 <S.Menu>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/About">About</Link></li>
-                    <li><Link to="/Projects">Projects</Link></li>
+                    <img src={ImgMenu} className="ImgMenu" alt="Três barras horizontais. Icone Cardápio, por Icon8 "/>
+                    <li className="responsiveMenu"><Link to="/">Home</Link></li>
+                    <li className="responsiveMenu"><Link to="/About">About</Link></li>
+                    <li className="responsiveMenu"><Link to="/Projects">Projects</Link></li>
                 </S.Menu>
             </S.Nav>
             <Routes>
