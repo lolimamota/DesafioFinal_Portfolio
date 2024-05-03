@@ -52,11 +52,30 @@ grid-template-areas:
     }
 };
 @media (min-width: 320px) and (max-width: 768px) {
+<<<<<<< HEAD
     padding: 5vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+=======
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-template-areas:
+". h1title h1title h1title ."
+". perfilImg perfilImg perfilImg ."
+"btnName btnName . btnHab1 btnHab1"
+"btnHab2 btnHab2 . btnFav btnFav"
+". . text . ."
+;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
+>>>>>>> parent of 650ee57 (commit sem margens)
 }
 `;
 
@@ -77,7 +96,7 @@ animation: float 5s ease-in-out infinite;
     }
 };
 @media (min-width: 320px) and (max-width: 768px) {
-    font-size:.8rem;
+    font-size: 1.5rem;
 };
 `;
 
@@ -87,6 +106,18 @@ font-weight: 100;
 height: 10vh;
 background-color: transparent;
 @media (min-width: 320px) and (max-width: 768px) {
+<<<<<<< HEAD
+=======
+    height: 20vh;
+    width: 50vw;
+    border: solid red;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
+>>>>>>> parent of 650ee57 (commit sem margens)
+=======
+>>>>>>> parent of 650ee57 (commit sem margens)
     font-size: 1rem;
     color: white;
 };
