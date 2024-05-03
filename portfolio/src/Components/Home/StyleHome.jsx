@@ -51,7 +51,7 @@ grid-template-areas:
 
 @media (min-width: 320px) and (max-width: 768px) {
     display: grid;
-    padding: 5vh;
+    padding: 1vh;
     justify-content: space-around;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
