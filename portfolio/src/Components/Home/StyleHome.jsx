@@ -5,7 +5,7 @@ width: 250px;
 border-radius: 50%;
 box-shadow: -15px 3px 90px 7px #ffe4f3;
 @media (min-width: 320px) and (max-width: 768px) {
-    width: 150px;        
+    width: 100px;        
 }
 `;
 
@@ -45,37 +45,24 @@ grid-template-areas:
 };
 .text{
     grid-area: text;
-    @media (min-width: 320px) and (max-width: 768px) {
-    display: flex;
     border-radius: 10px;
     background-image: linear-gradient(to left, #4b244a , #6d72c3);
-    }
 };
+
 @media (min-width: 320px) and (max-width: 768px) {
-<<<<<<< HEAD
+    display: grid;
     padding: 5vh;
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-=======
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(6, 1fr);
-grid-template-areas:
-". h1title h1title h1title ."
-". perfilImg perfilImg perfilImg ."
-"btnName btnName . btnHab1 btnHab1"
-"btnHab2 btnHab2 . btnFav btnFav"
-". . text . ."
-;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 650ee57 (commit sem margens)
-=======
->>>>>>> parent of 650ee57 (commit sem margens)
-=======
->>>>>>> parent of 650ee57 (commit sem margens)
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "h1title h1title h1title"
+    "perfilImg btnName btnHab1"
+    "perfilImg . ."
+    "perfilImg btnHab2 btnFav"
+    "text text text";
+
 }
 `;
 
@@ -96,7 +83,7 @@ animation: float 5s ease-in-out infinite;
     }
 };
 @media (min-width: 320px) and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 };
 `;
 
@@ -106,18 +93,6 @@ font-weight: 100;
 height: 10vh;
 background-color: transparent;
 @media (min-width: 320px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-    height: 20vh;
-    width: 50vw;
-    border: solid red;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 650ee57 (commit sem margens)
-=======
->>>>>>> parent of 650ee57 (commit sem margens)
-=======
->>>>>>> parent of 650ee57 (commit sem margens)
     font-size: 1rem;
     color: white;
 };
@@ -131,6 +106,8 @@ border: none;
     transition-delay: transparent ease-in 0.2s;
 };
 @media (min-width: 320px) and (max-width: 768px) {
+    width: 100px;
+    font-size: 0.8rem;
     &:hover{
     background-image: linear-gradient(to left, #4b244a , #6d72c3);
     transition-delay: transparent ease-in 0.2s;
