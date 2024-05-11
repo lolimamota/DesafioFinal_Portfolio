@@ -5,7 +5,12 @@ width: 250px;
 border-radius: 50%;
 box-shadow: -15px 3px 90px 7px #ffe4f3;
 @media (min-width: 320px) and (max-width: 768px) {
-    width: 100px;        
+    width: 100px; 
+    /* box-shadow: 15px -3px -90px -7px #ffe4f3;*/
+    box-shadow: none;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 `;
 
