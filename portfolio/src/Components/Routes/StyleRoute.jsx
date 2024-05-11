@@ -37,7 +37,6 @@ font-weight: 100;
         width: 1.5rem;
     }
     .responsiveMenu{
-        display: none;
         width: 100%;
     }
     }
