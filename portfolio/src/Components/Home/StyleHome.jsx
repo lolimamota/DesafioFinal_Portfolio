@@ -60,11 +60,10 @@ grid-template-areas:
     justify-content: space-around;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
     "h1title h1title h1title"
     "perfilImg btnName btnHab1"
-    "perfilImg . ."
     "perfilImg btnHab2 btnFav"
     "text text text";
 
