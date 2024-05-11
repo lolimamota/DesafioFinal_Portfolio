@@ -38,6 +38,7 @@ font-weight: 100;
     }
     .responsiveMenu{
         display: none;
+        width: 100%;
     }
     }
 `;
