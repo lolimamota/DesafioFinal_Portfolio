@@ -7,11 +7,9 @@ justify-content: space-around;
 align-items: center;
 margin-top: 10vh;
 @media (min-width: 320px) and (max-width: 768px) {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
+    margin-top: 2px;
 }
 `;
 
@@ -20,12 +18,12 @@ border-radius: 60px 60px 0px 0px / 58px 58px 0px 0px;
 border: solid 1px;
 width: 20%;
 text-align: center;
-@media (min-width: 320px) and (max-width: 768px){
-    border: none;
-    width: 100%;
-    text-align: left;
-    padding-left: 0.5rem;
-    font-size: 0.8rem;
+@media (min-width: 320px) and (max-width: 768px) {
+    border: solid red;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }`;
 
 export const BtnBack = styled.button`
