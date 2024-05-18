@@ -19,8 +19,8 @@ border: solid 1px;
 width: 20%;
 text-align: center;
 @media (min-width: 320px) and (max-width: 768px) {
-    border: solid red;
-    border-radius: 0;
+    width: 100%;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
