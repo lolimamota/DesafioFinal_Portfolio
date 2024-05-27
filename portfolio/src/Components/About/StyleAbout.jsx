@@ -8,7 +8,6 @@ align-items: center;
 margin-top: 10vh;
 @media (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
-    justify-content: space-around;
     margin-top: 2px;
 }
 `;
@@ -24,6 +23,7 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 0.5rem;
 }`;
 
 export const BtnBack = styled.button`
