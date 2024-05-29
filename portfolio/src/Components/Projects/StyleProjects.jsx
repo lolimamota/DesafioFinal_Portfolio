@@ -16,7 +16,8 @@ padding: 1rem;
 img{
     width: 200px;
     border-radius: 15% ;
-}
+};
+
 @media (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
 }

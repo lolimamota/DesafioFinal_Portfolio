@@ -14,9 +14,9 @@ function Projects() {
     { image: Fantastika, title: 'Fantastika', link: "https://fantastikapetshop.vercel.app/", description: "Página desenvolvida com as seguintes tecnologias: HTML e CSS, aplicando tecnicas como indentação e responsividade" },
     { image: Cartoon, title: 'CartoonNetwork', link: "https://cn-exercise.vercel.app/", description: "Usando Vite+React, as tecnicas de map, styled-components, useState, useEffect, filter foram aplicadas" },
     { image: Cruzeiro, title: 'Cruzeiro Christmas Emotions', link: "https://christimas-emotions.vercel.app/", description: "Usando JavaScript, houve desenvolvimento da Logica, use o F12 e veja!" },
-    { image: TheWitcher, title: 'The Witcher', link: "https://the-red-project.vercel.app/", description: "Linguagens como HTML, CSS foram aplicadas além de implementação do responvivo mobile" },
+    { image: TheWitcher, title: 'The Witcher', link: "https://the-red-project.vercel.app/", description: "Linguagens como HTML, CSS foram aplicadas além de implementação do responvivo mobile e z-index" },
     { image: Parceiros, title: 'Patrocinadores Talentos Digitais', link: "https://patriocinio-vnw.vercel.app/", description: "Brincando com os Hooks do React, utilizamos DOM, useEffect e useState para fazer o funcionamento e mudanças no click" },
-    { image: TDCacho, title: 'Projeto Tô de Cacho', link: "https://todecacho.vercel.app/", description: "Desenvolvimento melhor visualizado ainda no mobile, apresenta um menu suspenso com addEventListener" }
+    { image: TDCacho, title: 'Projeto Tô de Cacho', link: "https://todecacho.vercel.app/", description: "Desenvolvimento melhor visualizado ainda no mobile, apresenta um menu suspenso com addEventListener, criado com o intuito de desenvolver um projeto do zero sem supervisão" }
   ]
 
   const Carrousel = {
